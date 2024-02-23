@@ -3,16 +3,15 @@
 # Authors
 - Ziyad Eslam
 - Omar Ramadan
-- Mostafa khashan
+- Mostafa Khashan
 - Retaj Tarek
-- Rowan Tarek
-**Date:** 2023-08-1
+- Rowan Ashraf
 
 **Description:**
 
 This is a simple electronic load designed for testing power supplies and batteries combined with a current and voltage meter (2in1) to get realtime measurement
 on the current and voltages to get a better experience and better ability to apply control system as PID system.
-It can sink up to 5A of current (software limited) and input voltage up to 20V.
+It can sink up to 5A of current (software limited) and input voltage up to 30V.
 
 **Features:**
 
@@ -25,16 +24,16 @@ It can sink up to 5A of current (software limited) and input voltage up to 20V.
 **Specifications:**
 | spec | range |
 | ---- | ---- |
-| Input voltage range | 5V - 20V |
+| Input voltage range | 5V - 30V |
 | Output current range | 0A - 5A |
 | Power handling capacity | 60W (TESTED) | 
 | Measurement accuracy | ±1% |
-| Interface | ATMEGA8 for controlling current draw,PID && LCD for feedback |
+| Interface | ATMEGA8 for controlling current draw, PID and LCD for feedback |
 
 **Software:**
 
-The electronic load is controlled through AVR controller through dedecated push buttons for increasing and decreasing current draw by adjacting the PWM signal 
-that we then pass through RC filter to get its average that is between 0V and 5V. Also, output the current & voltages feedback on LCD.
+The electronic load is controlled through AVR controller through dedicated push buttons for increasing and decreasing current draw by adjusting the PWM signal 
+that we then pass through RC filter to get its average that is between 0V and 5V. Also, the current & voltages feedback are output on the LCD.
 
 **Hardware:**
 * ATmega8 microcontroller
@@ -43,7 +42,7 @@ that we then pass through RC filter to get its average that is between 0V and 5V
 * Current sense resistor
 * PWM output for controlling load
 
-**usage:**
+**Usage:**
 1. Assemble the electronic load according to the included instructions.
 2. Connect the power supply to the input terminals.
 3. Connect the device under test (DUT) to the output terminals.
